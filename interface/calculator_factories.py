@@ -1,4 +1,5 @@
 import tkinter as tk
+from typing import List
 
 
 def make_root() -> tk.Tk:
@@ -31,3 +32,18 @@ def display_control_a(event):
     event.widget.select_range(0,'end')
     event.widget.icursor('end')
     return 'break'
+
+def make_buttons(root) -> List[List[tk.Button]]:
+    button_texts: List[List[str]] = [
+        ['7', '8', '9', '+', 'C'],
+        ['4', '5', '6', '-', '/'],
+        ['1', '2', '3', '*', '^'],
+        ['0', '.', '(', ')', '='],
+    ]
+
+    buttons: List[List[tk.Button]] = []
+
+    for row_index, row_value in enumerate(button_texts, start=2):
+        button_row = []
+        for col_index, col_value in enumerate(row_value):
+            print(col_value)
