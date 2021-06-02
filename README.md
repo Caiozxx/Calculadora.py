@@ -1,2 +1,2 @@
-Cauculador para quem esta iniciando na programação.
-codigo simples para iniciantes 
+Calculadora simples de codigo aberto fita em python
+
