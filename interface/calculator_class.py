@@ -2,6 +2,8 @@ import tkinter as tk
 from typing import List
 
 class Calculator:
+    """Teste"""
+
     def __init__(
         self,
         root: tk.Tk,
@@ -9,8 +11,10 @@ class Calculator:
         display: tk.Entry,
         buttons: List[List[tk.Button]]
     ):
-        self.root: tk.Tk  = root
+        self.root = root
         self.label = label
         self.display = display 
         self.buttons = buttons
-        self.root
+
+    def start(self):
+        self.root.mainloop()
