@@ -11,5 +11,6 @@ def main():
     calculator = Calculator(root, label, display, buttons)
     calculator.start()
     
+    
 if __name__ == '__main__':
     main()
